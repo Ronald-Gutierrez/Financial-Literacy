@@ -29,17 +29,20 @@
                 background-image: linear-gradient(to right, #380d62, #10054a);
                 
             }
-
+            
         </style>
         @show
 </head>
 <body>
         <div id="app" class="navbar-tp ">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-md py-3">
                 <div class="container">
                     <a class="navbar-brand " href="{{ url('/') }}">
                         <img src="/img/logo.png" alt="" /> <span class="fw-medium p-3 text-light">Financial Literacy</span>
                     </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
                     <div class="ml-auto">
                         <a class="navbar-brand navbar-sm small text-white" href="{{ url('/about') }}">
                             About

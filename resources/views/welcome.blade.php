@@ -30,18 +30,17 @@ body {
 header {
 	background-image: linear-gradient(to right, #380d62, #10054a);
 }
-
 /* Mobile */
 @media (max-width: 768px) {
-	.py-6 {
-		padding: 50px 0;
-	}
-	.py-7 {
-		padding: 60px 0;
-	}
-	.steps .pb-4 {
-		padding-right: 80px !important;
-	}
+    .py-6 {
+        padding: 50px 0;
+    }
+    .py-7 {
+        padding: 60px 0;
+    }
+    .steps .pb-4 {
+        padding-right: 80px !important;
+    }
 }
 </style>
 @endsection
