@@ -46,7 +46,8 @@ header {
 </style>
 @endsection
 @section('body')
-    <div class="showcase py-6">
+    <header class="text-white ">
+        <div class="showcase py-6">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -65,6 +66,9 @@ header {
                 </div>
             </div>
         </div>
+    </header>
+
+    
         <!-- About -->
 		<section class="about py-7">
 			<div class="container">

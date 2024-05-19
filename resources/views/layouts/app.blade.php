@@ -24,27 +24,35 @@
 		<link rel="stylesheet" href="/css/style.css" />
 		<title>Financial Literacy | Welcome</title>
         @section('css')
+        <style>
+            .navbar-tp{
+                background-image: linear-gradient(to right, #380d62, #10054a);
+                
+            }
+
+        </style>
         @show
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Financial Literacy
-                </a>
-                <div class="ml-auto">
-                    <a class="navbar-brand" href="{{ url('/about') }}">
-                        About
+        <div id="app" class="navbar-tp ">
+            <nav class="navbar">
+                <div class="container">
+                    <a class="navbar-brand " href="{{ url('/') }}">
+                        <img src="/img/logo.png" alt="" /> <span class="fw-medium p-3 text-light">Financial Literacy</span>
                     </a>
-                    <a class="navbar-brand" href="{{ url('/steps') }}">
-                        7 Steps
-                    </a>
+                    <div class="ml-auto">
+                        <a class="navbar-brand navbar-sm small text-white" href="{{ url('/about') }}">
+                            About
+                        </a>
+                        <a class="navbar-brand navbar-sm small text-white" href="{{ url('/steps') }}">
+                            7 Steps
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
-        <main class="py-4">
+        <main class="py">
             @yield('body')
         </main>
     </div>
