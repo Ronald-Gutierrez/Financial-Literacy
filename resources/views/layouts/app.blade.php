@@ -24,6 +24,7 @@
         .navbar-tp {
             background-image: linear-gradient(to right, #380d62, #10054a);
         }
+        
     </style>
     @show
 </head>
@@ -41,10 +42,10 @@
 					<div id="navbarNav" class="collapse navbar-collapse">
 						<ul class="navbar-nav ms-auto">
 							<li class="nav-item">
-								<a href="#about" class="nav-link text-light">About</a>
+								<a href="{{ url('/about') }}" class="nav-link text-light">About</a>
 							</li>
 							<li class="nav-item">
-								<a href="#steps" class="nav-link text-light">7 Steps</a>
+								<a href="{{ url('/steps') }}" class="nav-link text-light">7 Steps</a>
 							</li>
 						</ul>
 					</div>
